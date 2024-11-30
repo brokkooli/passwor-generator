@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/cssresetmeyer.css" />
+    <link rel="stylesheet" href="password-generator.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Generate a <br /><span>random password</span></h1>
+      <p>Never use an insecure password again.</p>
+      <section>
+        <label for="set-length-el"
+          >Length:
+          <input id="set-length-el" type="number" min="8" max="16" value="12"
+        /></label>
+
+        <button onclick="generatePasswords()">Generate passwords</button>
+      </section>
+
+      <hr />
+
+      <section>
+        <span id="password-1-el" class="copy-text" data-tooltip=""></span>
+
+        <span id="password-2-el" class="copy-text" data-tooltip=""></span>
+      </section>
+    </main>
+
+    <script src="password-generator.js"></script>
+  </body>
+</html>
